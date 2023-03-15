@@ -1,16 +1,49 @@
-<ion-menu contentId="main-content">
+<ion-menu class=" menu" contentId="main-content">
   <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu Content</ion-title>
+    <ion-toolbar class="logo-menu">
+      <img  src="assets\icon\logo-instacart.svg">
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">
 
-    <p>Departments</p>
+  <ion-content >
+      <ion-list>
+        <ion-item [button]="true" id="departments">Departments</ion-item>
+        <ion-item [button]="true" id="moreways">More ways to shop</ion-item>
+        <ion-item [button]="true" id="help">Help</ion-item>
 
+        <ion-popover trigger="departments" [dismissOnSelect]="true" side="end">
+          <ng-template>
+            <ion-content>
+              <ion-list class="popover">
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                <ion-item [button]="true" [detail]="false">Nested option</ion-item>
 
-  
-  </ion-content>
+              </ion-list>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+      </ion-list>
+    </ion-content>
+
 
   </ion-menu>
 <div class="ion-page" id="main-content">
@@ -26,5 +59,7 @@
   </ion-header>
   <ion-content class="ion-padding">
     Tap the button in the toolbar to open the menu.
+    <a [routerLink]="['/pagamentos']" class="dropdown-item">Pagamentos</a>
   </ion-content>
+
 </div>
