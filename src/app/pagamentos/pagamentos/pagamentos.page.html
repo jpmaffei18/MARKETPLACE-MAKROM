@@ -1,6 +1,6 @@
 <div class="ion-page" id="main-content">
-  <ion-header>
-    <ion-toolbar>
+  <ion-header >
+    <ion-toolbar style="background: white;">
       <ion-buttons slot="start">
 
       </ion-buttons>
@@ -8,7 +8,83 @@
       
     </ion-toolbar>
   </ion-header>
-  <ion-content class="ion-padding">
+  <ion-content>
+      <div class="finalizarcompra">
+
+        <ion-accordion-group [animated]="false">
+          <ion-accordion value="first" toggleIcon="">
+            <ion-item slot="header" color="white">
+              <ion-label>Add delivery address</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="header" >First Content</div>
+          </ion-accordion>
+          
+          
+          <ion-accordion value="second">
+            <ion-item slot="header" color="white">
+              <ion-label>Delivery Instructions</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">Second Content</div>
+          </ion-accordion>
+        
+        
+          <ion-accordion value="third">
+            <ion-item slot="header" color="white">
+              <ion-label>Delivery time</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">Third Content</div>
+          </ion-accordion>
+        
+        
+          <ion-accordion value="fourth">
+            <ion-item slot="header" color="white">
+              <ion-label>Mobile number </ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">Fourth Content</div>
+          </ion-accordion>
+        
+        
+          <ion-accordion value="fifth">
+            <ion-item slot="header" color="white">
+              <ion-label> Payment </ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">Fifth Content</div>
+          </ion-accordion>
+        
+        
+          <ion-accordion value="sixth">
+            <ion-item slot="header" color="white">
+              <ion-label>Share with Safeway </ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">Sixth Content</div>
+          </ion-accordion>
+          
+          
+          <ion-accordion value="seventh">
+            <ion-item slot="header" color="white">
+              <ion-label># Itens</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">Seventh Content</div>
+          </ion-accordion>
+          
+          
+          <ion-accordion value="eigth">
+            <ion-item slot="header" color="white">
+              <ion-label>Make it a gift</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">Eight Content</div>
+          </ion-accordion>
+        </ion-accordion-group>
+      </div>
+
+
+      <div class="total">
+          
+      </div>
+      
   </ion-content>
 
+
+
+  
 </div>

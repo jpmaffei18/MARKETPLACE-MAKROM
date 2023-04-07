@@ -1,3 +1,16 @@
+.ion-page{
+  overflow: y-scroll;
+}
+
+ion-content{
+
+  --ion-background-color: #f9f9f9;
+  display: flex;
+}
+ion-header ion-toolbar{
+  --ion-background-color: #777777;
+}
+
 #container {
     text-align: center;
   
@@ -30,12 +43,56 @@
     text-decoration:none;
   }
   
-  ion-toolbar img{
-    margin:auto;
+  ion-header ion-toolbar img{
+    margin-left: 46%;
+    
   }
   
   ion-searchbar{
       float: left;
       width: 50%;
       padding-left: 16%;
+      
+  }
+
+  .finalizarcompra{
+    width: 650px;
+    margin-left: 25%;
+    margin-top: 1%;
+    float: left;
+    margin-bottom: 100px;
+  }
+
+  .finalizarcompra ion-item{
+    background: white;
+    border-bottom:solid#f9f9f9;
+  }
+
+  .finalizarcompra ion-according-group{
+    background-color: white;
+    
+  }
+
+  .finalizarcompra ion-label{
+      height: 75px;
+      padding-top: 25px;
+      background-color: white;
+      color: black;
+      font-size:18px;
+      
+  }
+
+  .ion-padding{
+      height: 350px;
+      background-color: white;
+      color: black;
+  }
+
+  .total{
+    width: 300px;
+    height: 950px;  
+    background-color: white;
+    margin-top: 1%;
+    margin-left: 2%;
+    float: left;
   }
